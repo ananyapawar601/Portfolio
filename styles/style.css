@@ -107,8 +107,8 @@
   }
   
   .profile-pic {
-    width: 250px;
-    height: 300px;
+    width: 450px;
+    height: 500px;
     object-fit: cover;
     border-radius: 8px;
     border: 3px solid #36454F;
@@ -116,7 +116,7 @@
   }
   
   .about-content p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   
   /* Center-Aligned Sections */
