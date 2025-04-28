@@ -7,10 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
       if (targetId && document.querySelector(targetId)) {
         window.scrollTo(0, document.querySelector(targetId).offsetTop - 100);
       }
+
+      // Auto close nav menu if it's open (on mobile)
+      const navLinks = document.getElementById('nav-links');
+      if (navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+      }
     });
   });
 
-  // Hamburger menu
+  // Hamburger menu toggle
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('nav-links');
 
