@@ -464,6 +464,43 @@
     transform: translateY(-2px);
   }
   
+  .tracker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+    color: white;
+  }
+  
+  .difficulty-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .stat {
+    background: #333;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .stat.easy {
+    color: #00c2c2;
+  }
+  .stat.medium {
+    color: #ffb100;
+  }
+  .stat.hard {
+    color: #ff4d4f;
+  }
+  
+
   /* Responsive Design */
   @media (max-width: 768px) {
     body {

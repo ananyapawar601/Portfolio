@@ -6,17 +6,14 @@
   <title>Ananya Pawar | Portfolio</title>
 
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  <!-- Optional: For better favicon support across devices -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico">
   
   <link rel="stylesheet" href="styles/style.css">
-  <!-- Font Awesome (for icons) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navigation (Right-Aligned) -->
   <nav class="blue-nav">
     <div class="nav-brand">
       <img 
@@ -26,12 +23,10 @@
       >
     </div>
 
-   <!-- Hamburger Icon -->
    <div class="hamburger" id="hamburger">
     <i class="fas fa-bars"></i>
   </div>
 
-  <!-- Nav links -->
   <ul id="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
@@ -42,7 +37,6 @@
   </ul>
 </nav>
 
-  <!-- Hero Section (Left-Aligned) -->
   <header>
     <h1>Hi, I'm <span class="highlight">Ananya Pawar</span></h1>
     <p>Software Engineer | Problem Solver | Tech Enthusiast </p>
@@ -50,7 +44,6 @@
     <p style="color: green; font-weight: bold;">Open to Full-Time opportunities</p>
   </header>
 
-  <!-- About Me (Full-Width) -->
   <section id="about" class="section">
     <h2>About Me</h2>
     <div class="about-content">
@@ -242,7 +235,6 @@
     </div>
   </section>
 
-  <!-- Projects (Full-Width) -->
   <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="project-grid">
@@ -287,7 +279,30 @@
     </div>
   </section>
 
-  <!-- Contact (Full-Width) -->
+  <section id="problem-solving" class="section">
+    <h2>Problem Solving</h2>
+    <p>
+      I actively practice data structures and algorithms to improve my problem-solving skills. With over 200+ problems solved on LeetCode, I’m continuously working on mastering coding patterns, optimizing solutions, and preparing for technical interviews.
+    </p>
+  
+    <div class="tracker-container">
+      <canvas id="leetcodeChart" width="200" height="200"></canvas>
+      <div class="difficulty-breakdown">
+        <div class="stat easy">Easy: <span id="easy-count"></span></div>
+        <div class="stat medium">Medium: <span id="medium-count"></span></div>
+        <div class="stat hard">Hard: <span id="hard-count"></span></div>
+      </div>
+    </div>
+  
+    <div style="margin-top: 10px;">
+      <a href="https://leetcode.com/ananyapawar601/" target="_blank" class="btn blue-btn">
+        <i class="fas fa-link"></i> View My LeetCode Profile
+      </a>
+    </div>
+  </section>
+  
+
+  <!-- Contact  -->
   <section id="contact" class="section">
     <h2 class="section-title">Get In Touch</h2>
     <div class="contact-container">
@@ -329,7 +344,6 @@
     </div>
   </section>
 
-  <!-- Footer (Left-Aligned) -->
   <footer>
     <div class="footer-content">
       <div class="footer-message">
@@ -351,7 +365,8 @@
       
   </footer>
 
-  <!-- JavaScript -->
   <script src="scripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </body>
 </html>
