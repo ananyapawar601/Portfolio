@@ -1,0 +1,63 @@
+---
+layout: base.html
+title: Home
+---
+
+<section class="intro">
+  <img src="/assets/profile_photo.PNG" alt="Ananya Pawar" class="portrait">
+  <p>I'm Ananya. I build things with code, think about products, and try to understand the world a little better everyday.</p>
+  <p>I do play a bit of sports which majorly includes Tennis and almost every other racket sport.</p>
+  <p>By day I work at the intersection of data and systems - APIs, integrations, the messy plumbing of how software actually talks to other software.</p>
+  <p>I'm drawn to the question of why things work the way they do - whether that is a product with inexplicably good retention, a city with a particular energy, or a habit that somehow sticks. Writing is how I figure out what I actually think or at least try to.</p>
+  <p>This site is where I put that thinking. No particular beat - products, health, places, sports, things I've read, things I cannot stop thinking about.</p>
+</section>
+
+<hr>
+
+<section class="posts-section">
+  <span class="label">Recent writing</span>
+  <ul class="posts">
+    {% for post in collections.posts | limit(5) %}
+    <li>
+      <span class="date">{{ post.date | readableDate }}</span>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <a href="/writing/" class="all-posts">All writing</a>
+</section>
+
+<hr>
+
+<section>
+  <span class="label">From the gallery</span>
+  <div class="gallery-grid">
+    <a href="/gallery/" class="album-card">
+      <div class="album-thumb"><span class="album-thumb-placeholder">Singapore</span></div>
+      <div class="album-name">Singapore</div>
+      <div class="album-meta">Coming soon</div>
+    </a>
+    <a href="/gallery/" class="album-card">
+      <div class="album-thumb"><span class="album-thumb-placeholder">Mumbai</span></div>
+      <div class="album-name">Mumbai</div>
+      <div class="album-meta">Coming soon</div>
+    </a>
+    <a href="/gallery/" class="album-card">
+      <div class="album-thumb"><span class="album-thumb-placeholder">New York</span></div>
+      <div class="album-name">New York</div>
+      <div class="album-meta">Coming soon</div>
+    </a>
+  </div>
+  <a href="/gallery/" class="all-posts">All albums</a>
+</section>
+
+<hr>
+
+<section class="elsewhere">
+  <span class="label">Elsewhere</span>
+  <p>
+    <a href="https://www.linkedin.com/in/ananyapawar09/" target="_blank">LinkedIn</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://github.com/ananyapawar601" target="_blank">GitHub</a>
+  </p>
+</section>

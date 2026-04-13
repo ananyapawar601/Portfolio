@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Manager</title>
+</head>
+<body>
+  <script>
+    window.CMS_MANUAL_INIT = true;
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    CMS.init({
+      config: {
+        backend: {
+          name: 'github',
+          repo: 'ananyapawar601/Portfolio',
+          branch: 'main',
+          base_url: 'https://api.netlify.com',
+          auth_endpoint: 'auth'
+        },
+        media_folder: 'assets/uploads',
+        collections: [
+          {
+            name: 'posts',
+            label: 'Blog Posts',
+            folder: 'posts',
+            create: true,
+            fields: [
+              { label: 'Title', name: 'title', widget: 'string' },
+              { label: 'Date', name: 'date', widget: 'datetime' },
+              { label: 'Body', name: 'body', widget: 'markdown' }
+            ]
+          },
+          {
+            name: 'gallery',
+            label: 'Gallery',
+            folder: 'gallery',
+            create: true,
+            fields: [
+              { label: 'City', name: 'title', widget: 'string' },
+              { label: 'Cover Photo', name: 'cover', widget: 'image' }
+            ]
+          }
+        ]
+      }
+    });
+  </script>
+</body>
+</html>
