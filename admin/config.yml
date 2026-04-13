@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: ananyapawar601/Portfolio
+  branch: main
+
+media_folder: assets/uploads
+
+collections:
+  - name: posts
+    label: Blog Posts
+    folder: posts
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: gallery
+    label: Gallery
+    folder: gallery
+    create: true
+    fields:
+      - { label: City, name: title, widget: string }
+      - { label: Cover Photo, name: cover, widget: image }
